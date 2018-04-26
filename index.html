@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Skovhuset</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,24 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
+	
+	<!-- Maps -->
+	<script>
+      function initMap() {
+        var skovhuset = {lat: 55.809466, lng: 10.048117};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: skovhuset
+        });
+        var marker = new google.maps.Marker({
+          position: skovhuset,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMbHzullqAU9AVIx3MODR50wFGFHCjH9k&callback=initMap">
+    </script>
 
   </head>
 
@@ -57,16 +75,13 @@
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Skovhuset</strong>
-            </h1>
-						<h3>tønballevej 5, 7130 juelsminde</h3>
-            <hr>
+          <div class="col-lg-10 mx-auto" style="">
+				<h1 class="text-uppercase"><strong>Til salg</strong></h1>
+				<h3>tønballevej 5, 7130 juelsminde</h3>
+				<hr>
           </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">205 m<sup>2</sup> af idyllisk hjem, klods op af Tønballe skov</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          <div class="col-lg-8 mx-auto col d-none d-lg-block d-xl-block">
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Læs mere</a>
           </div>
         </div>
       </div>
@@ -75,31 +90,45 @@
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
-					<div class="col-sm-12 col-md-8 col-xl-8 mx-auto text-center table-cell">
-            <h2 class="section-heading text-white">Huset i skoven</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam, lectus ut tristique vestibulum, ligula tellus gravida felis, sit amet vehicula ex lacus a nunc. Sed massa erat, vestibulum sed diam quis, suscipit lobortis quam. Sed consectetur vestibulum ex, hendrerit vulputate purus congue eleifend. Sed laoreet ligula in augue aliquam facilisis. Aliquam feugiat nunc eu mi vulputate, at lobortis quam pellentesque. Aliquam erat volutpat. Nam imperdiet lectus ligula, id tincidunt nulla luctus vel. Donec eget imperdiet felis. Morbi varius dignissim lacus, eu mattis neque dignissim et. Suspendisse gravida mi nisl, consequat luctus turpis suscipit sit amet. Nullam ipsum turpis, iaculis vel ipsum et, varius placerat tellus.</p>
-          </div>
-					<div class="col-sm-6 col-md-4 col-xl-4 table-cell mx-auto text-center">
-            <h2 class="section-heading text-white">Info</h2>
-            <hr class="light my-4">
-            <table class="table">
-				<tbody>
-					<tr>
-						<th scope="row">Meter</th>
-						<td>300</td
-					</tr>
-					<tr>
-						<th scope="row">Bygninger</th>
-						<td>3</td>
-					</tr>
-					<tr>
-						<th scope="row">Etager</th>
-						<td>2</td>
-					</tr>
-				</tbody>
-			</table>
-          </div>
+			<div class="col-sm-12 col-md-8 col-xl-8 mx-auto text-center table-cell">
+				<h2 class="section-heading text-white">Idyllisk hus ved skov og strand</h2>
+				<hr class="light my-4">
+				<p class="text-faded mb-4">Denne tidligere skovfogedbolig ligger I skovbrynet til Tønballe skov, med udsigt til åbne marker og fjord. Der er I alt tre bygninger: en hovedbygning, en “ungdomsbolig” og en dobbelt garage.  
+					Boligen er syd-/nord vendt beliggende på 2830 m2 stor grund i opvokset have med stort rododendronbed, frugttræer- og buske, omgivet af skov og et mangfoldigt dyreliv samt 10 minutters gang fra fjorden.
+					Skovfogedboligen er opført i 1922 i røde mursten med et grundareal på 116 m2, og blev nænsomt totalrenoveret i 1997-99, hvor 1. sal blev inddraget. I samme 	forbindelse blev lagt nyt tag i rødt tegl. </p>
+			</div>
+			<div class="col-sm-6 col-md-4 col-xl-4 table-cell mx-auto text-center">
+				<h2 class="section-heading text-white">Info</h2>
+				<hr class="light my-4">
+				<table class="table">
+					<tbody>
+						<tr>
+							<th scope="row">Grund</th>
+							<td>2830 m<sup>2</sup></td
+						</tr>
+						<tr>
+							<th scope="row">Hovedbygning</th>
+							<td>190 m<sup>2</sup></td>
+						</tr>
+						<tr>
+							<th scope="row">Ungdomsbolig</th>
+							<td>54 m<sup>2</sup></td>
+						</tr>
+						<tr>
+							<th scope="row">Garage</th>
+							<td>54 m<sup>2</sup></td>
+						</tr>
+						<tr>
+							<th scope="row">Energimærke</th>
+							<td>C</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-lg-10 mx-auto" style="text-align: center; color: #fff">
+				<hr>
+				<h1 class="text-uppercase">Pris: <span style="border-bottom: 3px double;">2.795.000,-</span></h1>
+			</div>
         </div>
       </div>
     </section>
@@ -150,9 +179,10 @@
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
+		
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/udenfor1.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/udenfor1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -165,9 +195,10 @@
               </div>
             </a>
           </div>
+		  
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/udenfor2.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/udenfor2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -180,9 +211,10 @@
               </div>
             </a>
           </div>
+		  
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/udenfor3.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/udenfor3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -195,9 +227,10 @@
               </div>
             </a>
           </div>
+		  
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/udenfor4.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/udenfor4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -210,9 +243,10 @@
               </div>
             </a>
           </div>
+		  
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/koekken1.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/koekken1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -225,9 +259,10 @@
               </div>
             </a>
           </div>
+		  
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <a class="portfolio-box" href="img/portfolio/fullsize/stue1.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/stue1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -240,14 +275,14 @@
               </div>
             </a>
           </div>
+		  
         </div>
       </div>
     </section>
 
     <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <div id="map"></div>
       </div>
     </section>
 
@@ -255,20 +290,21 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Tag kontakt med det samme!</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p class="mb-5">Vil du høre mere, tilmelde dig vores åbent-hus arrangement eller se huset i andet omfang, så skriv eller ring til os.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>Kirsten: 40 46 43 44</br>
+			Preben: 40 52 82 40</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="mailto:your-email@your-domain.com">skodt6@me.com</a>
             </p>
           </div>
         </div>

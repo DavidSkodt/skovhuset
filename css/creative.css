@@ -39,13 +39,17 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #EBEBD3 !important;
+  background-color: #F05F40 !important;
 }
-
+.bg-primary-alt {
+  background-color: #F27C62 !important;
+}
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #073B4C !important;
 }
-
+.bg-dark-alt {
+  background-color: #61828D !important;
+}
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -309,4 +313,15 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+.table {
+	color: #fff;
+	line-height: 0.5em;
+	font-size: 1em;
+	text-align: left;
+}
+#map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
 }

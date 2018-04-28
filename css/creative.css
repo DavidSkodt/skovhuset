@@ -42,7 +42,7 @@ h6 {
   background-color: #F05F40 !important;
 }
 .bg-primary-alt {
-  background-color: #F27C62 !important;
+  background-color: #fff !important;
 }
 .bg-dark {
   background-color: #073B4C !important;
@@ -306,12 +306,31 @@ header.masthead p {
   border-color: #F05F40;
 }
 
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
   background-color: #ee4b28 !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.btn-secondary {
+  background-color: #F05F40;
+  color: #fff;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+
+.btn-secondary:active, .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 .table {

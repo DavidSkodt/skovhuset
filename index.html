@@ -56,16 +56,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Om huset</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Billeder</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Lokal området</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#dokumenter">Dokumenter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -76,12 +79,12 @@
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto" style="">
-				<h1 class="text-uppercase"><strong>Til salg</strong></h1>
-				<h3>tønballevej 5, 7130 juelsminde</h3>
+				<h1 class="text-uppercase" style="text-shadow: 1px 1px black;"><strong>Til salg</strong></h1>
+				<h2 style="text-shadow: 1px 1px black;">Tønballevej 5, 7130 juelsminde</h2>
+				<h3 style="text-shadow: 1px 1px black;">Åbent hus 20/5 & 21/5</h3>
 				<hr>
-          </div>
-          <div class="col-lg-8 mx-auto col d-none d-lg-block d-xl-block">
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Læs mere</a>
+				<a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Tilmeld</a>
+				</button>
           </div>
         </div>
       </div>
@@ -93,9 +96,22 @@
 			<div class="col-sm-12 col-md-8 col-xl-8 mx-auto text-center table-cell">
 				<h2 class="section-heading text-white">Idyllisk hus ved skov og strand</h2>
 				<hr class="light my-4">
-				<p class="text-faded mb-4">Denne tidligere skovfogedbolig ligger I skovbrynet til Tønballe skov, med udsigt til åbne marker og fjord. Der er I alt tre bygninger: en hovedbygning, en “ungdomsbolig” og en dobbelt garage.  
+				<p class="text-white mb-4">Denne tidligere skovfogedbolig ligger I skovbrynet til Tønballe skov, med udsigt til åbne marker og fjord. Der er I alt tre bygninger: en hovedbygning, en “ungdomsbolig” og en dobbelt garage.  
 					Boligen er syd-/nord vendt beliggende på 2830 m2 stor grund i opvokset have med stort rododendronbed, frugttræer- og buske, omgivet af skov og et mangfoldigt dyreliv samt 10 minutters gang fra fjorden.
 					Skovfogedboligen er opført i 1922 i røde mursten med et grundareal på 116 m2, og blev nænsomt totalrenoveret i 1997-99, hvor 1. sal blev inddraget. I samme 	forbindelse blev lagt nyt tag i rødt tegl. </p>
+				
+				<div class="collapse text-white mb-4" id="collapseExample">
+				<p>Hovedbygningen er I to plan. På stueplan finder man entre, stue med brændeovn indbygget i pejs, to værelser, det ene i tilknytning til depot, som kan inddrages som ekstra badeværelse eller ”walk-in closet”, et badeværelse med brus og gulvvarme, samt stort velindrettet køkken-alrum med brændeovn indbygget i skorsten og i åben forbindelse med trappe til første sal.
+					Første sal på 84 m2 (heraf udnyttet 74 m2) indeholdende stor, lys stue åben i kip med oprindelige og synlige hanebjælker, samt soveværelse med ovenlysvinduer og indbyggede skabe.</p>
+				<p>Hovedbygningen er gennemisoleret og står som ny efter op-fugning af murværk i 2014 
+					Ungdomsboligen er separat beliggende, opført i 1997, renoveret i 2004 og består foruden af stort lyst værelse med ovenlys og udgang til have, af entre og bad- og vaskerum.  Overalt i Ungdomsboligen er opvarmningen gulvvarme. Herforuden et lille værksted med separat indgang. Dobbelt garage på 54 m2 med automatiske porte og støbt gulv opført i 2004. </p>
+					
+					Bygningsmassen fremstår sammenhængende i røde mursten og tilhørende rødt tegltag, på hovedbygningen er lagt solceller til varmt vand. I forbindelse med overgang fra oliefyr til etablering af varmepumpe luft/vand anlæg i 2012 er der lagt solceller på Ungdomsboligen. El- og varme udgift andrager i 2017 22.750.- kr. Vandforsyning fra Glud vandværk og hurtigt Fibernet.
+				<p>Skovfogedboligen har som sine nærmeste naboer Tønballegård, Stenagergård og Jensgård. Boligen er beliggende mellem Snaptun med lystbådehavn, sejlsports aktiviteter og færgefart til Hjarnø og Endelave, og Glud som byder på velrenommeret daginstitution og skole, et righoldigt foreningsliv, samt gode indkøbsmuligheder i den lokale Brugs.</p>
+				</div>
+				<button onClick = "this.style.visibility= 'hidden';" class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					Læs mere
+				</button>
 			</div>
 			<div class="col-sm-6 col-md-4 col-xl-4 table-cell mx-auto text-center">
 				<h2 class="section-heading text-white">Info</h2>
@@ -117,61 +133,17 @@
 						<tr>
 							<th scope="row">Garage</th>
 							<td>54 m<sup>2</sup></td>
-						</tr>
+						</tr>                                                               
 						<tr>
 							<th scope="row">Energimærke</th>
 							<td>C</td>
 						</tr>
 					</tbody>
 				</table>
+				<h2 class="text-white">Pris <strong>2.795.000,-</strong></h1>
+				<hr class="light my-4">
+				
 			</div>
-			<div class="col-lg-10 mx-auto" style="text-align: center; color: #fff">
-				<hr>
-				<h1 class="text-uppercase">Pris: <span style="border-bottom: 3px double;">2.795.000,-</span></h1>
-			</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -186,10 +158,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Fra gårdsplads
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Ungdomsbolig, hovedbygning
                   </div>
                 </div>
               </div>
@@ -202,10 +174,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Fra terrasse
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Bagside af hovedbygning
                   </div>
                 </div>
               </div>
@@ -218,10 +190,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Fra terrasse
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Bagside af hovedbygning
                   </div>
                 </div>
               </div>
@@ -234,10 +206,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Bag ungdomsbolig
                   </div>
                   <div class="project-name">
-                    Project Name
+                    varmepumpe, brændeskur / hønsehus samt baghave
                   </div>
                 </div>
               </div>
@@ -250,10 +222,10 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Hovedbygning
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Køkken
                   </div>
                 </div>
               </div>
@@ -266,10 +238,106 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Hovedbygning	
                   </div>
                   <div class="project-name">
-                    Project Name
+                    1. sal stue
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/udsigt1.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/udsigt1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Hovedbygning
+                  </div>
+                  <div class="project-name">
+                    Udsigt til fjorden
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/stue2.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/stue2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Hovedbygning
+                  </div>
+                  <div class="project-name">
+                    1. sal stue, dør til soveværelse
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/stue4.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/stue4.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Hovedbygning
+                  </div>
+                  <div class="project-name">
+                    1. sal stue
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/sov3.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/sov3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Ungdomsbolig
+                  </div>
+                  <div class="project-name">
+                    Taressedør mod sydlig gavl
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/sov4.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/sov4.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Ungdomsbolig
+                  </div>
+                  <div class="project-name">
+                    Stort tagvindue lader lyset strømme ind
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/sov2.jpg">
+              <img class="img-fluid" src="img/portfolio/fullsize/sov2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Hovedbygning
+                  </div>
+                  <div class="project-name">
+                    Stueetage, soveværelse med dobbelt dør til anden stue
                   </div>
                 </div>
               </div>
@@ -279,12 +347,85 @@
         </div>
       </div>
     </section>
-
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <div id="map"></div>
+	
+	
+	
+	<section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Lokal området</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-tree text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Tønballe skov</h3>
+              <p class="text-muted mb-0">Huset grænser op til 73 hektare af skov! Skoven er tilknyttet et <a href="http://naturstyrelsen.dk/media/134386/toenballefolder2014-3.pdf" target="_blank">naturcenter</a> og har en klynge sheltere med grillplads.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-ship text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Snaptun</h3>
+              <p class="text-muted mb-0">I Snaptun, under 2 km væk, finder i <a href="https://truenorthefterskole.com/" target="_blank">True North efterskole</a>, lystbådhavn og færgefart til Hjarnø og Enderlave.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-graduation-cap text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Glud</h3>
+              <p class="text-muted mb-0">Glud, som er under 4 km væk, rummer <a href="http://glud-skole.skoleporten.dk/sp" target="_blank">folkeskole</a> op til 8. klassetrin, samt Dagli'Brugs. Her er også rig mulighed for at <a href="http://www.skjold-glud.dk/" target="_blank">dyrke sport!</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-building text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Horsens</h3>
+              <p class="text-muted mb-0">Horsens er den største nærtliggende by, med hyggelig og livlig gågade. Byen er hjemstedet for en stor, årlig <a href="http://www.middelalderfestival.dk/" target="_blank">middelalderfestival!</a></p>
+            </div>
+          </div>
+		  <div class="col-lg-12 mx-auto" style="padding-top: 128px;">
+			<div id="map"></div>
+		</div>
+        </div>
       </div>
     </section>
+
+	
+	<section class="bg-dark" id="dokumenter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-white">Dokumenter</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-bolt text-white mb-3 sr-icons"></i></br>
+              <a class="btn btn-primary btn-xl mb-3" href="./docs/energi.pdf" target="_blank">Energirapport.pdf <i class="fa fa-external-link text-white"></i></a>
+			  <p class="text-muted mb-0">Tryk på knappen for at se energirapport fra 2018. Linket vil åbne en PDF i et nyt vindue.</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-map text-white mb-3 sr-icons"></i></br>
+              <a class="btn btn-primary btn-xl mb-3" href="./docs/plantegninger.pdf" target="_blank">Plantegning.pdf <i class="fa fa-external-link text-white"></i></a>
+			  <p class="text-muted mb-0">Tryk på knappen for at se de originale plantegninger. Linket vil åbne en PDF i et nyt vindue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="contact">
       <div class="container">
@@ -293,6 +434,9 @@
             <h2 class="section-heading">Tag kontakt med det samme!</h2>
             <hr class="my-4">
             <p class="mb-5">Vil du høre mere, tilmelde dig vores åbent-hus arrangement eller se huset i andet omfang, så skriv eller ring til os.</p>
+			<h3>Åbent hus</h3>
+			<p class="mb-5">Søndag 20/5 kl 14-16</br>
+							Mandag 21/5 kl 14-16</p>
           </div>
         </div>
         <div class="row">

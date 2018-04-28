@@ -344,3 +344,16 @@ header.masthead p {
         height: 400px;
         background-color: grey;
 }
+#info {
+	padding-top: 128px;
+}
+@media (max-width:768px) {
+	#info {
+		padding-top: 128px;
+	}
+}
+@media (min-width:768px) {
+	#info {
+		padding-top: 0px;
+	}
+}
